@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* reset */
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,address,em,img,strong,b,i,ol,ul,li,a,fieldset,form,label,legend,table,caption,thead,tbody,tfoot,tr,th,td,article,aside,footer,header,nav,section,figure,figcaption {
+    margin: 0; padding: 0; 
+    border: 0; 
+    vertical-align: baseline;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+}
+
+/* HTML5 dispaly-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block;}
+
+/* a링크 초기화 */
+a, a:link, a:visited {color: #444; text-decoration: none;}
+a:hover, a:active {color: #81a0d0; text-decoration: none;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #444; font-size: 13px; line-height: 1.5;}
+
+/* 폰트 스타일 초기화 */
+em, i, address {font-style: normal;}
+
+table{border-spacing: 0;}
+
+/* 블릿기호 초기화 */
+ul,li,ol {list-style: none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+
+/* 테두리 초기화 */
+img,fieldset {border: 0 none;}
+
+/* 버튼 초기화 */
+button {border: 0; padding: 0; margin: 0; cursor: pointer;}
+
+/* clearfix */
+.clearfix {*zoom: 1;}
+.clearfix::before, .clearfix::after {display: block; content: ''; line-height: 0;}
+.clearfix::after {clear: both;}
+
+/* ir 효과 */
+.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;}
+.ir_wa {display: block; overflow: hidden; position: relative; width: 100%; height: 100%; z-index: -1;}
+.ir_so {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+
+/* input style reset */
+input {background-image: none;}
+input[type=button],
+input[type=reset],
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search],
+input[type=tel],
+input[type=email] {
+    -webkit-appearance: none;
+    border-radius: 0
+}
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+input:checked[type=checkbox] {
+    background-color: #666;
+    -webkit-appearance: checkbox;
+} 

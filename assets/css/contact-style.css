@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+/* layout */
+#wrap {
+    min-width: 1280px;
+    overflow: hidden;
+    background: #fff;
+}
+#header {
+    height: 90px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+#main {margin-bottom: 100px;}
+#loaction {margin: 20px 0;}
+#series {}
+#footer {border-top: 1px solid #999;}
+
+/* container */
+.container {
+    position: relative;
+    width: 1280px; height: inherit;
+    margin: 0 auto;
+}
+
+/* row */
+.row {padding: 0 28px;}
+
+/* header */
+.header {height: 90px;}
+.header .logo {
+    float: left;
+    width: 155px; height: 60px; 
+    padding: 24px 0 0 50px;
+    box-sizing: border-box;
+}
+.header .logo img {width: 155px;}
+
+.header .nav {
+    width: 416px; height: 60px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.header .nav > ul > li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.header .nav > ul > li > a {
+    display: block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #4b5565;
+}
+.header .nav > ul > li > a::after {
+    content: '';
+	position: absolute; 
+    left: 50%; bottom: 0;
+    z-index: 20;
+	width: 0; height: 2px; 
+    background: #778fb5;
+	transition: all .3s ease-in-out;
+}
+.header .nav > ul > li:hover > a {color: #778fb5;}
+.header .nav > ul > li:hover > a::after {
+    left: 0;
+    width: 100%;
+}
+.header .nav > ul > li:nth-child(4) > a {font-size: 10px;}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0; top: 90px;
+    z-index: 10;
+    width: 100%; height: 60px; 
+    line-height: 60px; 
+    text-align: center;
+}
+.submenu > div:first-child {height: 0;}
+.submenu li {
+    display: inline-block;
+    padding: 0 16px;
+}
+.submenu li a {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4b5565;
+}
+.submenu li a::after {
+    content: '';
+	position: absolute;
+    left: 50%; bottom: 0;
+	width: 0; height: 2px;
+    background: #778fb5;
+	transition: all .3s ease-in-out;
+}
+.submenu li:hover a{color: #778fb5;}
+.submenu li:hover a::after {
+    left: 0;
+    width: 100%;
+}
+.header .nav > ul > li:hover .submenu {display: block;}
+
+.header .hd_right {
+    position: absolute; 
+    right: 58px; top: 13px;
+}
+.header .hd_right .sign {
+    padding-bottom: 10px;
+    text-align: right;
+}
+.header .hd_right .sign a {
+    color: #4b5565;
+    font-weight: 400;
+}
+.header .hd_right .sign a.login {
+    position: relative; 
+    margin-right: 26px;
+}
+.header .hd_right .sign a.signin::before {
+    content: ''; 
+    position: absolute; 
+    right: 62px; top: 4px; 
+    width: 2px; height: 13px; 
+    background-color: #4b5565;
+    cursor: auto;
+}
+
+.header .hd_right .search_area form fieldset {
+    position: relative;
+    height: 36px;
+}
+.header .hd_right .search_area form fieldset input.search_text {
+    width: 230px; height: 36px;
+    padding: 0 41px 1px 15px;
+    border: 1px solid #4b5565;
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: 0;
+}
+.header .hd_right .search_area form fieldset button.submit_btn {
+    position: absolute;
+    top: 0; right: 6px;
+    width: 36px; height: 36px;
+    background: url(../img/search_img.png) no-repeat;
+}
+.nav_bg {
+    display: none;
+    position: absolute;
+    left: 0; top: 91px;
+    z-index: 9;
+    width: 100%; height: 60px;
+    min-width: 1280px;
+    background: rgba(255,255,255,0.9);
+}
+
+/* location */
+ul.location {
+    padding: 0 40px;
+    text-align: right;
+}
+ul.location > li {
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+ul.location > li:last-child {margin-right: 0;}
+ul.location > li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -13px; top: 6px;
+    width: 8px; height: 8px;
+    border-top: 1px solid #4b5565;
+    border-right: 1px solid #4b5565;
+    transform: rotate(45deg);
+
+}
+ul.location > li:last-child::after {display: none;}
+ul.location > li a, ul.location > li span {color: #4b5565;}
+
+/* contact */
+.contact {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.contact h2 {
+    display: inline-block;
+    margin: 10px 0 30px 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #444;
+}
+.contact > p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.contact > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
+.contact > ul > li > a {
+    display: block;
+    padding: 8px 20px 9px;
+    border: 1px solid #4b5565;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #4b5565;
+}
+.contact > ul > li:first-child > a {width: 88px;}
+.contact > ul > li:last-child > a {width: 145px;}
+.contact > ul > li > a:hover {
+    border: 1px solid #81a0d0;
+    color: #81a0d0;
+}
+
+.contact .contact_detail form fieldset .privacy {margin-top: 50px;}
+.contact .contact_detail form fieldset .privacy h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact .contact_detail form fieldset .privacy > p {
+    margin: 0 0 20px 40px;
+    font-size: 16px;
+}
+.contact .contact_detail form fieldset .privacy .privacy_table {
+    width: 1064px;
+    margin: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+.contact .contact_detail form fieldset .privacy .privacy_table thead tr td {border-bottom: 1px solid #444;}
+.contact .contact_detail form fieldset .privacy .privacy_table tr td {padding: 8px 0 9px;}
+.contact .contact_detail form fieldset .privacy em {
+    display: block;
+    margin: 15px 40px 25px;
+    font-size: 16px;
+}
+.contact .contact_detail form fieldset .privacy .privacy_input  {margin-left: 40px;}
+.contact .contact_detail form fieldset .privacy .privacy_input input[type=checkbox] {
+    width: 16px; height: 16px;
+    vertical-align: bottom;
+}
+.contact .contact_detail form fieldset .privacy .privacy_input label {font-size: 16px;}
+
+.contact .contact_detail form fieldset .detail {margin-top: 50px;}
+.contact .contact_detail form fieldset .detail h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact .contact_detail form fieldset .detail p {
+    margin: 0 0 20px 40px;
+    font-size: 16px;
+}
+.contact .contact_detail form fieldset .detail table {
+    width: 1064px;
+    margin: 0 40px;
+    font-size: 16px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+.contact .contact_detail form fieldset .detail table colgroup col:first-child{border-right: 1px solid #444;}
+.contact .contact_detail form fieldset .detail table tbody tr td {
+    height: 40px;
+    padding: 4px 40px;
+    border-bottom: 1px solid #444;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.contact .contact_detail form fieldset .detail table tbody tr td:first-child {
+    border-right: 1px solid #444;
+}
+.contact .contact_detail form fieldset .detail table tbody tr:last-child td {border-bottom: 0;}
+
+.contact .contact_detail form fieldset .detail table tbody tr td select {
+    width: 250px; height: 30px;
+    padding-left: 20px;
+    border: 1px solid #444;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/down.svg) no-repeat right 10px center;
+    background-size: 10px;
+}
+.contact .contact_detail form fieldset .detail table tbody tr td input[type=text], 
+.contact .contact_detail form fieldset .detail table tbody tr td input[type=email] {
+    width: 250px; height: 30px;
+    padding: 0 10px;
+    border: 1px solid #444;
+    box-sizing: border-box;
+}
+.contact .contact_detail form fieldset .detail table tbody tr td .addfile_btn {display: inline-block;}
+.contact .contact_detail form fieldset .detail table tbody tr td .addfile_btn label {
+    display: block;
+    width: 82px;
+    padding: 5px 15px;
+    border-radius: 2px;
+    background-color: #778fb5;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.contact .contact_detail form fieldset .detail table tbody tr td .addfile_btn label:hover {background-color: #81a0d0;}
+.contact .contact_detail form fieldset .detail table tbody tr td .addfile_btn input[type=file] {
+    position: absolute; 
+    width: 1px; height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+}
+.contact .contact_detail form fieldset .detail table tbody tr td em {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #778fb5;
+}
+.contact .contact_detail form fieldset .detail table tbody tr td textarea {
+    width: 760px;
+    max-width: 760px;
+    height: 200px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid #444;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.contact .contact_detail form fieldset .contact_btn {
+    margin-top: 50px;
+    text-align: center;
+}
+.contact .contact_detail form fieldset .contact_btn .ct_btn {
+    width: 150px; height: 40px;
+    background: #4b5565;
+    font-size: 16px;
+    color: #fff;
+}
+
+.error {
+    display: none;
+    font-size: 14px;
+    color: red;
+}
+
+/* footer */
+.footer {padding: 50px 0;}
+.footer .footer_left .footer_link {margin-bottom: 15px;}
+.footer .footer_left .footer_link ul li {
+    position: relative;
+    display: inline-block; 
+    padding-right: 12px;
+}
+.footer .footer_left .footer_link ul li::after {
+    content: '';
+    position: absolute;
+    right: 4px; top: 4px;
+    width: 1px; height: 13px;
+    background: #888;
+}
+.footer .footer_left .footer_link ul li:last-child::after {
+    width: 0; height: 0;
+}
+.footer .footer_left .footer_link ul li a {color: #888;}
+.footer .footer_left .footer_link ul li a b {color: #666;}
+
+.footer .footer_left .footer_info address {width: 660px;}
+.footer .footer_left .footer_info address span {
+    display: inline-block;
+    position: relative;
+    padding: 0 14px 4px 0;
+}
+.footer .footer_left .footer_info address span::after {
+    content: '';
+    position: absolute;
+    right: 5px; top: 4px;
+    width: 1px; height: 13px;
+    background: #888;
+}
+.footer .footer_left .footer_info address span.no_bar::after {
+    width: 0; height: 0;
+}
+
+.footer .footer_left .footer_copy {margin-top: 15px;}
+.footer .footer_left .footer_copy p {color: #888;}
+
+.footer .footer_right {
+    position: absolute;
+    right: 30px; bottom: 50px;
+}
+.footer .footer_right .familysite select {
+    width: 160px; height: 35px;
+    margin: 0;
+    padding-left: 15px;
+    border: 1px solid #444;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/up.svg) no-repeat right 10px center;
+    background-size: 10px;
+}

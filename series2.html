@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="ljy0123">
+    <meta name="description" content="민음사 사이트 개인적으로 수정한 포트폴리오용 사이트입니다.">
+    <meta name="keywords" content="웹퍼블리싱, 포트폴리오, 웹퍼블리싱 포트폴리오">
+
+    <title>연재 | 민음사 출판그룹</title>
+
+    <!-- css style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/series-style.css">
+
+    <!-- favicon -->
+    <link rel="stylesheet" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icons/favicon_72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/favicon_192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon_96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon_16.png">
+
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+         alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+      </script>
+   <![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header clearfix">
+                        <h1 class="logo">
+                            <a href="index.html">
+                                <img src="assets/img/header-logo.png" alt="민음사 출판그룹 로고 이미지">
+                            </a>
+                        </h1>
+                        <!-- //header_logo -->
+                        <nav class="nav">
+                            <ul class="clearfix">
+                                <li><a href="javascript:;">이벤트</a>
+                                    <ul class="submenu"></ul>
+                                </li>
+                                <li><a href="javascript:;">커뮤니티</a>
+                                    <ul class="submenu">
+                                        <li><a href="javascript:;">소식&amp;공지</a></li>
+                                        <li><a href="javascript:;">행사스케치</a></li>
+                                        <li><a href="javascript:;">자료실</a></li>
+                                        <li><a href="javascript:;">동영상자료</a></li>
+                                        <li><a href="javascript:;">책의 사생활</a></li>
+                                        <li><a href="series1.html">연재</a></li>
+                                        <li><a href="javascript:;">보도자료</a></li>
+                                        <li><a href="javascript:;">원고투고</a></li>
+                                        <li><a href="javascript:;">2차 저작권 가이드</a></li>
+                                        <li><a href="contact.html">1:1 문의</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:;">그룹소개</a>
+                                    <ul class="submenu">
+                                        <li><a href="javascript:;">브랜드 소개</a></li>
+                                        <li><a href="javascript:;">인사말</a></li>
+                                        <li><a href="javascript:;">역사</a></li>
+                                        <li><a href="javascript:;">채용정보</a></li>
+                                        <li><a href="javascript:;">거래처 안내</a></li>
+                                        <li><a href="javascript:;">찾아오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:;">&#9679; &#9679; &#9679;</a>
+                                    <ul class="submenu">
+                                        <li><a href="javascript:;">출판그룹 도서 DB</a></li>
+                                        <li><a href="javascript:;">출판그룹 작가 DB</a></li>
+                                        <li><a href="javascript:;">도서목록 다운로드</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- //nav -->
+                        <div class="hd_right">
+                            <div class="sign">
+                                <a href="login.html" class="login">로그인</a>
+                                <a href="javascript:;" class="signin">회원가입</a>
+                            </div>
+                            <!-- //log_in -->
+                            <div class="search_area">
+                                <form>
+                                    <fieldset>
+                                        <legend class="ir_so">검색창</legend>
+                                        <label for="search"></label>
+                                        <input type="text" id="search" class="search_text" placeholder="검색어를 입력해주세요">
+                                        <button id="search_btn" type="submit" class="submit_btn" title="검색"></button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <!-- //search -->
+                        </div>
+                        <!-- //hd_right -->
+                    </div>
+                </div>
+            </div>
+            <!-- //.header -->
+            <div class="nav_bg"></div>
+        </header>
+        <!-- //#header -->
+
+        <main id="main">
+            <section id="loaction">
+                <div class="container">
+                    <h2 class="ir_so">현재 위치 표시</h2>
+                    <ul class="location">
+                        <li>
+                            <a href="index.html">
+                                <img src="assets/img/home_icon.png" alt="홈으로 바로가기">
+                            </a>
+                        </li>
+                        <li><span>커뮤니티</span></li>
+                        <li><a href="series2.html">연재</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- //location -->
+            <section id="series">
+                <div class="container">
+                    <div class="row">
+                        <div class="series clearfix">
+                            <h2>연재</h2>
+                            <div class="series_title">
+                                <ul>
+                                    <li>
+                                        <a href="series1.html" class="series_btn">
+                                            <strong>사냥꾼</strong>
+                                            <em>김남우</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="series2.html" class="series_btn">
+                                            <strong>전래동화 다시읽기</strong>
+                                            <em>장놀부</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="series3.html" class="series_btn">
+                                            <strong>우주</strong>
+                                            <em>박하늘</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="series4.html" class="series_btn">
+                                            <strong>여름이었다</strong>
+                                            <em>이정원</em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //series_title -->
+
+                            <div class="series_detail">
+                                <div class="series_detail_cont">
+                                    <div class="sd_top clearfix">
+                                        <div class="series_img">
+                                            <img src="assets/img/series02.jpg" alt="전래동화 다시읽기 메인 이미지">
+                                        </div>
+                                        <div class="series_desc">
+                                            <h3 class="title">전래동화 다시읽기</h3>
+                                            <p class="info">
+                                                <em>장놀부</em><span class="bar">|</span>
+                                                <span class="series_episodes"></span><span class="bar">|</span>
+                                                <span>연재</span>
+                                            </p>
+                                            <p class="desc">어릴 적부터 읽었던 전래동화의 바탕이 되는 시대적 배경이나 유행하던 문화를 바탕으로 이야기 다시 읽어보기</p>
+                                            <ul class="btns">
+                                                <li><a href="javascript:;">첫 화 보기</a></li>
+                                                <li><a href="javascript:;">이어보기</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- //sd_top -->
+
+                                    <div class="sd_bottom">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">회차순</a>
+                                                        <span>|</span>
+                                                        <a href="javascript:;">최신순</a>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>1. 흥부전 - (1)</span>
+                                                            <span>2021.04.01<i>|</i>약 5천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>2. 흥부전 - (2)</span>
+                                                            <span>2021.04.08<i>|</i>약 4천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>3. 흥부전 - (3)</span>
+                                                            <span>2021.04.15<i>|</i>약 5천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>4. 장화홍련전 - (1)</span>
+                                                            <span>2021.04.22<i>|</i>약 6천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>5. 장화홍련전 - (2)</span>
+                                                            <span>2021.04.29<i>|</i>약 5천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>6. 콩쥐팥쥐</span>
+                                                            <span>2021.05.06<i>|</i>약 8천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>7. 이상한 샘물</span>
+                                                            <span>2021.05.13<i>|</i>약 6천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>8. 여우누이 - (1)</span>
+                                                            <span>2021.05.20<i>|</i>약 3천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>9. 여우누이 - (2)</span>
+                                                            <span>2021.05.27<i>|</i>약 3천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>10. 아기장수 우투리 - (1)</span>
+                                                            <span>2021.06.03<i>|</i>약 3천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;">
+                                                            <span>11. 아기장수 우투리 - (2)</span>
+                                                            <span>2021.06.10<i>|</i>약 3천 자</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //sd_bottom -->
+                                </div>
+                                <!-- //series_detail_cont -->
+                            </div>
+                            <!-- //series_detail -->
+                        </div>
+                        <!-- //.series -->
+                    </div>
+                </div>
+            </section>
+            <!-- //#series -->
+        </main>
+        <!-- //main -->
+        
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer clearfix">
+                        <div class="footer_left">
+                            <div class="footer_link">
+                                <ul>
+                                    <li><a href="javascript:;">회원약관</a></li>
+                                    <li><a href="javascript:;"><b>개인정보처리방침</b></a></li>
+                                    <li><a href="javascript:;">문의</a></li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span>2차 저작권 문의 가이드 :</span>
+                                            <b>국내 저작물</b>
+                                        </a>
+                                    </li>
+                                    <li><a href="javascript:;"><b>해외저작물</b></a></li>
+                                    <li><a href="javascript:;">위치 및 연락처</a></li>
+                                    <li><a href="javascript:;">사이트맵</a></li>
+                                    <li><a href="javascript:;">소식 RSS</a></li>
+                                    <li><a href="javascript:;">민음사 출판그룹 도서 RSS</a></li>
+                                    <li><a href="javascript:;">ENGLISH</a></li>
+                                </ul>
+                            </div>
+                            <!-- //footer_link -->
+                            <div class="footer_info">
+                                <address>
+                                    <span>(주)민음북스</span>
+                                    <span>대표이사: 박상준</span>
+                                    <span>사업자등록번호: 211-88-41803</span>
+                                    <span class="no_bar">통신판매업 신고번호: 제2010-서울강남00971호</span>
+                                    <span>주소: 서울시 강남구 신사동 506 강남출판문화센터 5층</span>
+                                    <span class="no_bar">새주소: 서울시 강남구 도산대로 1길 62 5층</span>
+                                    <span>전화: 02-515-2000</span>
+                                    <span class="no_bar">webmaster@minumsa.com</span>
+                                </address>
+                            </div>
+                            <!-- //footer_info -->
+                            <div class="footer_copy">
+                                <p>Copyright © Minumsa Publishing Group</p>
+                            </div>
+                        </div>
+                        <!-- //footer_left -->
+                        <div class="footer_right">
+                            <div class="familysite">
+                                <label for="family_select" class="ir_so">민음사 출판그룹 패밀리 사이트</label>
+                                <select id="family_select" name="family_select">
+                                    <option value="#"> - 민음사 출판그룹 -</option>
+                                    <option value="#">민음사 출판그룹</option>
+                                    <option value="#">민음사</option>
+                                    <option value="#">황금가지</option>
+                                    <option value="#">사이언스북스</option>
+                                    <option value="#">세미콜론</option>
+                                    <option value="#">민음인</option>
+                                    <option value="#">판미동</option>
+                                    <option value="#">반비</option>
+                                    <option value="#">펄프</option>
+                                    <option value="#">비룡소</option>
+                                </select>
+                            </div>
+                            <!-- //familysite -->
+                        </div>
+                        <!-- //footer_right -->
+                    </div>
+                    <!-- //.footer -->
+                </div>
+            </div>
+        </footer>
+        <!-- //#footer -->
+    </div>
+    <!-- //wrap -->
+
+    <!-- javascript -->
+    <script src="assets/js/series.js"></script>
+</body>
+</html>

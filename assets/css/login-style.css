@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+    overflow: hidden;
+    background: #fff;
+}
+header {width: 100%;} 
+#login_wrap {}
+footer {
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 70px;
+}
+
+/* 가운데 영역 */
+.container {
+    position: relative;
+    width: 1280px; height: inherit;
+    margin: 0 auto; 
+}
+
+/* header */
+.header {margin: 130px 0 55px 0;}
+.header .logo {
+    width: 154px;
+    margin: 0 auto;
+}
+.header .logo a {display: block;}
+
+/* login */
+.login_wrap {
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+}
+.login_wrap form fieldset .id_area {margin-bottom: 10px;}
+.login_wrap form fieldset .pw_area {margin-bottom: 20px;}
+.login_wrap form fieldset .input_text {
+    width: 390px; height: 50px;
+    padding: 0 20px;
+    border: 1px solid #4b5565;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 300;
+}
+.login_wrap form fieldset .lh_check {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    text-align: left;
+}
+.login_wrap form fieldset .input_check {
+    width: 16px; height: 16px;
+    vertical-align: -2px;
+}
+.login_wrap form fieldset .lh_check label {
+    font-size: 15px;
+    font-weight: 300;
+    color: #666;
+}
+.login_wrap form fieldset .login_btn .lg_btn {
+    width: 390px; height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #4b5565;
+}
+.login_wrap form fieldset .login_footer {margin-top: 30px;}
+.login_wrap form fieldset .login_footer .login_info {
+    font-size: 14px;
+    font-weight: 300;
+    color: #888;
+}
+.login_wrap form fieldset .login_footer span {
+    margin: 0 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+.error {
+    display: none;
+    padding: 10px 0 0 50px;
+    text-align: left;
+    font-size: 14px;
+    color: red;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    line-height: 60px;
+}
+.footer span {
+    font-size: 12px;
+    color: #777;
+}
