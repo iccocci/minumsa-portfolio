@@ -193,7 +193,6 @@ ul.location > li a, ul.location > li span {color: #4b5565;}
     box-sizing: border-box;
 }
 .contact h2 {
-    display: inline-block;
     margin: 10px 0 30px 0;
     font-size: 26px;
     font-weight: 700;

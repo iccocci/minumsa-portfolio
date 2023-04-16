@@ -11,9 +11,9 @@
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
-#main {}
+#main {margin-bottom: 100px;}
 #loaction {margin: 20px 0;}
-#series {margin-bottom: 100px;}
+#series {}
 #footer {border-top: 1px solid #999;}
 
 /* container */
@@ -189,7 +189,7 @@ ul.location > li a, ul.location > li span {color: #4b5565;}
 
 /* series */
 .series {
-    padding: 0 12px;
+    padding: 0 40px;
     box-sizing: border-box;
 }
 .series h2 {
@@ -220,8 +220,8 @@ ul.location > li a, ul.location > li span {color: #4b5565;}
 
 .series .series_detail {
     float: left;
-    width: 905px;
-    padding: 20px 70px;
+    width: 849px;
+    padding: 20px 45px;
     border-left: 1px solid #999;
     box-sizing: border-box;
 }
